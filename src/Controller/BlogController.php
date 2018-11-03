@@ -14,7 +14,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class BlogController extends AbstractController
 {
     /**
-     * @Route ("blog/{slug}", requirements={"slug"="\b[a-z-]+\b"}, name="blog_show")
+     * @Route ("blog/{slug}", requirements={"slug"="\b[a-z0-9-]+\b"}, name="blog_show")
      */
     public function show($slug='article-sans-titre')
     {
